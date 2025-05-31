@@ -58,8 +58,32 @@ function setupParticleInput() {
     particleCount = parseInt(input.value) || 1;
     resetIndividuals();
   };
+
+  // Add GitHub link below the input
+  let gitLink = document.createElement('a');
+  gitLink.href = 'https://github.com/Photon1c/SocialPressureBuildUp';
+  gitLink.textContent = 'Git';
+  gitLink.target = '_blank';
+  gitLink.style.cssText = `
+    position: fixed;
+    top: 60px;
+    left: 10px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    text-decoration: underline;
+    z-index: 1000;
+    background: rgba(0,0,0,0.3);
+    padding: 2px 8px;
+    border-radius: 4px;
+    transition: background 0.2s;
+  `;
+  gitLink.onmouseover = () => { gitLink.style.background = 'rgba(30,144,255,0.5)'; };
+  gitLink.onmouseout = () => { gitLink.style.background = 'rgba(0,0,0,0.3)'; };
+
   document.body.appendChild(label);
   document.body.appendChild(input);
+  document.body.appendChild(gitLink);
 }
 
 // Setup title that auto-hides after 15 seconds
