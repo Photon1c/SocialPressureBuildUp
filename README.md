@@ -2,6 +2,8 @@
 
 ## 🚀 Deployment Guide
 
+This app is [live here](https://socialpressurebuildup.netlify.app/)
+
 ### 📦 Prerequisites
 - Node.js (v14 or higher)
 - npm (comes with Node.js)
@@ -35,11 +37,11 @@ npm run dev
    - Base directory: `.` (root directory)
    - Package directory: (leave blank)
    - Build command: (leave blank)
-   - Publish directory: `public`
+   - Publish directory: `.` (project root)
    - Functions directory: (leave blank)
 6. Click "Deploy site"
 
-Netlify will serve your app directly from the `public` directory. If you add a build step in the future, update the build command and publish directory accordingly.
+Netlify will serve your app directly from the project root. If you add a build step in the future, update the build command and publish directory accordingly.
 
 #### Option 2: Deploy to GitHub Pages 📚
 1. Push your code to GitHub
