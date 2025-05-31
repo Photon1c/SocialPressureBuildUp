@@ -13,7 +13,7 @@ This app is [live here](https://socialpressurebuildup.netlify.app/)
 1. Clone the repository:
 ```bash
 git clone https://github.com/Photon1c/SocialPressureBuildUp
-cd social-conflict-visualizer
+cd SocialPressureBuildUp
 ```
 
 2. Install dependencies:
