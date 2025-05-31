@@ -36,8 +36,8 @@ npm run dev
 5. Deploy settings:
    - Base directory: `.` (root directory)
    - Package directory: (leave blank)
-   - Build command: (leave blank)
-   - Publish directory: `.` (project root)
+   - Build command: npm run build
+   - Publish directory: `.` dist
    - Functions directory: (leave blank)
 6. Click "Deploy site"
 
