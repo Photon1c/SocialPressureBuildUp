@@ -32,9 +32,14 @@ npm run dev
 3. Click "New site from Git"
 4. Select your repository
 5. Deploy settings:
-   - Build command: `npm run build`
-   - Publish directory: `dist`
+   - Base directory: `.` (root directory)
+   - Package directory: (leave blank)
+   - Build command: (leave blank)
+   - Publish directory: `public`
+   - Functions directory: (leave blank)
 6. Click "Deploy site"
+
+Netlify will serve your app directly from the `public` directory. If you add a build step in the future, update the build command and publish directory accordingly.
 
 #### Option 2: Deploy to GitHub Pages 📚
 1. Push your code to GitHub
